@@ -2,14 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>index</title>
+    <title>会員管理トップ</title>
 </head>
 <body>
-<h1>INDEX</h1>
-{{ range .datas }}
-<p>{{ .ID }}: <a href="/show/{{.ID}}">{{.Title}}</a> / <a href="/edit/{{.ID}}">編集</a> / <a
-        href="/delete/{{.ID}}">削除</a></p>
-{{ end }}
-<p><a href="/create">新規作成</a></p>
+<h1>会員管理トップ</h1>
+<a href="/user">会員一覧</a>
+<a href="/user/add">会員追加</a>
 </body>
 </html>
